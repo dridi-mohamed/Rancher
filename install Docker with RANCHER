@@ -1,0 +1,21 @@
+# Rancher need Docker to run so to installcurl https://releases.rancher.com/install-docker/18.09.sh | sh
+ docker we just use one link
+curl https://releases.rancher.com/install-docker/18.09.sh | sh
+
+
+# install this option to install Rancher 
+
+docker run -d --restart=unless-stopped \
+  -p 80:80 -p 443:443 \
+  -v /opt/rancher:/var/lib/rancher \
+  rancher/rancher:latest
+
+
+
+# Aceess via Web 'no Ports'
+192.168.1.XXX
+
+# to continus wathch the youtub Videos 
+
+# can esay now create cluseter and run Conatiers 
+
